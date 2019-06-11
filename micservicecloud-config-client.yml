@@ -1,0 +1,33 @@
+server:
+  port: 8201
+spring:
+  profiles: dev
+  application:
+    name: micservicecloud-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-dev.com:7001/eureka/  
+---
+server:
+  port: 8202
+spring:
+  profiles: sit
+  application:
+    name: micservicecloud-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-sit.com:7001/eureka/
+---
+server:
+  port: 8203
+spring:
+  profiles: uat
+  application:
+    name: micservicecloud-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-uat.com:7001/eureka/      
+    
