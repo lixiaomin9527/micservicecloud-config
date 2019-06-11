@@ -15,4 +15,11 @@ spring:
     active:
     - sit
   application:
-    name: micservicecloud-config-sit            
+    name: micservicecloud-config-sit   
+---
+spring:
+  profiles:
+    active:
+    - uat
+  application:
+    name: micservicecloud-config-uat      
