@@ -1,11 +1,10 @@
 server:
-  port: 8203
-spring:
-  profiles: uat
-  application:
-    name: micservicecloud-config-client
+  port: 7003
 eureka:
+  instance:
+    hostname: eureka7003.com
   client:
+    register-with-eureka: false
+    fetch-registry: false
     service-url:
-      defaultZone: http://eureka-uat.com:7003/eureka/ 
-    
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com/7002/eureka    
