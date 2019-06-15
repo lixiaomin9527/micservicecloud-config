@@ -1,0 +1,10 @@
+server:
+  port: 8202
+spring:
+  profiles: sit
+  application:
+    name: micservicecloud-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-sit.com:7002/eureka/
