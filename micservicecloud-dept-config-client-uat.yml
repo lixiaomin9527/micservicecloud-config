@@ -24,7 +24,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://localhost:7003/eureka/
   instance:
     instance-id: micservicecloud-dept8003
     prefer-ip-address: true #访问路径显示IP地址          
